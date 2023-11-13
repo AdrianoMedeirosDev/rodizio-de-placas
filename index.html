@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rodízio de Placas</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <form>
+        <label>Final da Placa</label>
+        <input type="number" placeholder="Final Placa" id="finalPLaca">
+
+        <!--Dia da Semana-->
+        <label>Dia da Semana</label>
+        <select id="diaSemana">
+            <option>Segunda-Feira</option>
+            <option>Terça-Feira</option>
+            <option>Quarta-Feira</option>
+            <option>Quinta-Feira</option>
+            <option>Sexta-Feira</option>
+            <option>Sábado</option>
+            <option>Domingo</option>
+        </select>
+
+        <!--tipoAutomovel-->
+        <label>Tipo do Automóvel</label>
+        <select id="tipoAutomovel">
+            <option>Carro</option>
+            <option>Caminhão</option>
+        </select>
+
+        <!--Local-->
+        <label>Tipo da Via</label>
+        <select id="tipoVia">
+            <option>Área Vermelha</option>
+            <option>Limite Área Vermelha</option>
+        </select>
+
+        <!--Horário-->
+        <label>Final da Placa</label>
+        <input type="number" placeholder="Horário Atual" id="horarioAtual">
+        <button onclick="verificarRodizio(); return false">Verificar Rodízio</button>
+
+        <!--Resultado Verificação-->
+        <h3></h3>
+    </form>
+</body>
+</html>
